@@ -16,9 +16,10 @@ lambda = .95;
 
 fnum = fnum + 1;
 figure(fnum)
-subplot(211); plot(a); title('true parameters'); legend('a_1','a_2')
-subplot(212); plot(Aest); title('estimated parameters'); legend('a_1','a_2')
-
+plot(a); 
+hold on
+plot(Aest); legend('a_1','a_2','a_1 RLS','a_2 RLS')
+%%
 n = 100;
 lambda_line = linspace(.85,1,n);
 ls2 = zeros(n,1);

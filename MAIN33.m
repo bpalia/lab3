@@ -15,7 +15,7 @@ plot(y)
 
 % State space equation definition
 A = [1 0; 0 1];
-Re = [sigma_e 0; 0 .01]; % Hiden state noise covariance matrix
+Re = [sigma_e 0; 0 0.01]; % Hiden state noise covariance matrix
 Rw = sigma_v; % Observation variance
 % usually C should be set here to, but in this case C is a function of time
 

@@ -1,6 +1,6 @@
 % Example of Kalman filter
 clearvars
-close all
+% close all
 
 
 % process simulation
@@ -12,7 +12,7 @@ N = length(y);
 
 % State space equation definition
 A = [1 0; 0 1];
-Re = [10e-4 0; 0 10e-4]; % Hiden state noise covariance matrix
+Re = [10e-4 0; 0 0]; % Hiden state noise covariance matrix
 Rw = 1.25; % Observation variance
 % usually C should be set here to, but in this case C is a function of time
 
